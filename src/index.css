@@ -1,13 +1,266 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+:root {
+  --green: #1aac83;
+  --red: #DF8E8E;
+  --blue: #42ACB3;
+  --white: #FAFAFA;
+  --black: #404040;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  background-color: var(--white);
+  margin: 0;
+  font-family: "Poppins";
+}
+
+/* Navbar */
+header .navbar {
+  background-color: var(--red);
+  margin: 0;
+  padding: 0px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+header a {
+  color: var(--white);
+  text-decoration: none;
+  /* height: 100px; */
+}
+header .navbar h1{
+  display: flex;
+  align-items: center;
+}
+header img{
+  max-height: 60px;
+  width: auto;
+  padding-right: 20px;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+nav a {
+  margin-left: 20px;
+}
+nav button {
+  background: #fff;
+  color: var(--blue);
+  border: 2px solid var(--blue);
+  padding: 6px 25px;
+  border-radius: 30px;
+  font-family: "Poppins";
+  cursor: pointer;
+  font-size: 1em;
+  margin-left: 20px;
+}
+
+
+/* Login Signup */
+label, input {
+  display: block;
+}
+input, select, option {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+form button {
+  background: var(--blue);
+  border: 0;
+  width: 50%;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+form.signup, form.login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+}
+form h2, form h4{
+  text-align: center;
+}
+form a{
+  text-decoration: none;
+  color: var(--blue);
+}
+form .btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Landing  Hero section*/
+.Hero{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  justify-content: center;
+  padding: 20px 160px;
+}
+.Hero .right img{
+  height: 100%;
+  width: auto
+}
+.Hero .left, .Hero .right{
+  margin-top: 40px;
+}
+.Hero .left p{
+  font-size: 250%;
+  font-weight: bold;
+  color: var(--black);
+  margin-top: 0%;
+  padding-top: 0%;
+}
+.Hero .left .title p{
+  color : var(--blue);
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+  font-size: 50px;
+}
+.Hero .left button {
+  background: var(--blue);
+  border: 0;
+  color: #fff;
+  padding: 10px 40px;
+  font-family: "Poppins";
+  border-radius: 30px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+  margin-right: 30px;
+}
+.Hero .left .login{
+  background: var(--white);
+  color: var(--blue);
+  border: 1px solid var(--blue);
+}
+.Hero .login::on-hover, .Hero .signup::on-hover{
+  background: var(--red);
+  color: var(--white);
+}
+
+/* Landing PS and Landing Logos*/
+.PS-container, .Logo-container{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+}
+.PS-container .PS{
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.PS-container .title, .Logo-container .title{
+  color: var(--black);
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+.PS-container .content{
+  font-size: 25px;
+  background-color: rgb(237, 237, 237);
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.Logo .Logos img{
+  height: 108px;
+  width: auto;
+  padding: 20px;
+  background-color: rgb(237, 237, 237);
+  margin: 10px;
+  border-radius: 20px;
+}
+.Logo-container .Logo{
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+.Logo-container .Logos{
+  text-align: center;
+}
+
+/* Landing Footer */
+footer{
+  padding: 80px;
+  background-color: var(--blue);
+  opacity: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Scrolling div in Home */
+.scroll-div{
+  width: 100%;
+  background-color: var(--blue);
+  padding: 10px 0;
+  margin: 10px 0;
+}
+.scroll-content {
+  display: inline-flex;
+  width: 700px;
+  color: var(--white);
+  animation: scrollText 10s linear infinite;
+  white-space: nowrap;
+}
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Home */
+.home {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  justify-content: center;
+}
+
+.map-wrap, .defaulter-wrap, .vehicle-wrap {
+  background: #D9D9D9;
+  width: auto;
+  height: 520px;
+  margin: 10px;
+  padding: 10px;
+  margin-right: 50px;
+  text-align: center;
+}
+.map-wrap .heading, .defaulter-wrap .heading, .vehicle-wrap .heading{
+  font-size: large;
+  font-family: "Poppins";
+  background-color: #DF8E8E;
+  width: 100%;
+  padding: 2px;
+  color:aliceblue;
+}
+.map-wrap .map{
+  height: fit-content;
+  width: auto;
 }
