@@ -14,6 +14,7 @@ const Navbar = () => {
           </h1>
         </Link>
         <nav>
+        <Link to="/dashboard" style={{margin:30}}>Dashboard</Link>
           <div className='user-details'>
             <span>User</span>
             <button>Log out</button>
