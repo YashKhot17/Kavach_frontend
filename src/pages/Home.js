@@ -1,14 +1,14 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
 import Scroll from '../components/Scroll'
 import VehicleDetails from '../components/Vehicles';
 import DefaulterDetails from '../components/Defaulter';
 import Map from '../components/Map';
+import Navbar from '../components/Navbar';
 
 const Home = () => {
   return (
     <div>
-      <Navbar />
+    <Navbar />
       <Scroll />
       <div className="home">
         <div className="tasks">

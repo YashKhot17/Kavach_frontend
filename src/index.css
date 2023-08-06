@@ -8,6 +8,7 @@
   --white: #FAFAFA;
   --black: #404040;
   --grey: rgb(237, 237, 237);
+  --error: #df4f4f;
 }
 
 body{
@@ -351,4 +352,201 @@ footer{
   align-items: center;
   justify-content: center;
   font-size: large;
+}
+
+/* search */
+.search .title{
+  display: flex;
+  font-size: xx-large;
+  font-weight: bold;
+  justify-content: center;
+  padding: 20px;
+}
+.search .searchBar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+.search input{
+  width: 40%;
+  min-width: 100px;
+  margin-top: 20px;
+  padding: 10px;
+  padding-left: 20px;
+  border-radius: 20px;
+}
+.search button{
+  background-color: var(--grey);
+  border: 0;
+  padding: 10px;
+  border-radius: 20px;
+}
+.search button:hover{
+  background-color: var(--blue);
+}
+.search .list-container{
+  display: flex;
+  justify-content: center;
+}
+.search .list-container .list{
+  width:50%;
+  text-align: center;
+  background-color: var(--grey);
+  padding: 20px;
+  border-radius: 20px;
+  height: 300px;
+  margin: 20px;
+}
+.search .btn{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.search .btn button{
+  width: 15%;
+  display: flex;
+  border: 0;
+  color: #fff;
+  padding: 10px 40px;
+  font-family: "Poppins";
+  border-radius: 30px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+  margin: 20px;
+}
+.search .btn .submit{
+  background: var(--green);
+}
+.search .btn .cancel{
+  background: var(--error);
+}
+
+/* Face.js face detected list */
+.face-container .title{
+  display: flex;
+  font-size: xx-large;
+  font-weight: bold;
+  justify-content: center;
+  padding: 20px;
+}
+.face-container .btn{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.face-container .btn button{
+  width: 15%;
+  display: flex;
+  border: 0;
+  color: #fff;
+  padding: 10px 40px;
+  font-family: "Poppins";
+  border-radius: 30px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+  margin: 20px;
+}
+.face-container .btn .submit{
+  background: var(--green);
+}
+.face-container .btn .cancel{
+  background: var(--error);
+}
+.face-container .list-container{
+  display: flex;
+  justify-content: center;
+}
+.face-container .list-container .list{
+  width:50%;
+  text-align: center;
+  background-color: var(--grey);
+  padding: 20px;
+  border-radius: 20px;
+  height: 300px;
+  margin: 20px;
+}
+
+/* Take Action */
+.action-container .title{
+  display: flex;
+  font-size: xx-large;
+  font-weight: bold;
+  justify-content: center;
+  padding: 20px;
+}
+.action-container .btn{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.action-container .btn button{
+  width: 15%;
+  display: flex;
+  border: 0;
+  color: #fff;
+  padding: 10px 40px;
+  font-family: "Poppins";
+  border-radius: 30px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+  margin: 20px;
+}
+.action-container .btn .submit{
+  background: var(--green);
+}
+.action-container .btn .cancel{
+  background: var(--error);
+}
+.action-container .list-container{
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+}
+.action-container .list-container .list-left{
+  display: flex;
+  justify-content: center;
+}
+.action-container .list-container .list{
+  width: 40rem;
+  text-align: center;
+  background-color: var(--grey);
+  padding: 20px;
+  border-radius: 20px;
+  height: 300px;
+  margin: 20px;
+}
+.action-container .list-container .list-right{
+  display: flex;
+  flex-direction: column;
+}
+.action-container .list-right .pic{
+  width:80%;
+  margin: 20px;
+  padding: 10px;
+  height: 10rem;
+  background-color: var(--grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.penalties{
+  margin: 20px;
+  margin-top: 0;
+  width: 80%;
+  padding: 10px;
+}
+.penalties .title{
+  font-size:large;
+  font-weight:bold;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.penalties .dropdown select{
+  font-size: medium;
 }

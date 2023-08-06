@@ -1,14 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import Navbar from '../components/Navbar'
 import heroImg from '../utils/hero.png';
+import Navbar from '../components/Navbar';
 
 
 const Landing = () => {
   return (
     <div>
-      <Navbar />
+    <Navbar />
       <div className='Hero'>
         <div className='left'>
           <div>

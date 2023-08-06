@@ -1,11 +1,11 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
 import { Link } from 'react-router-dom'
+import Navbar from '../components/Navbar'
 
 const Signup = () => {
   return (
     <div>
-      <Navbar />
+    <Navbar />
       <form className="signup">
         <h2>Sign Up</h2>
 

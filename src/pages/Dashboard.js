@@ -1,14 +1,14 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
 import Chart from '../components/Chart_Admin'
 import { Link } from 'react-router-dom'
+import Navbar from '../components/Navbar'
 
 const Admin = () => {
     return (
         <div>
-            <Navbar />
+        <Navbar />
             <div className='admin-container'>
-                <div className='title'>Admin Dashboard<Link to="/register"><button className='btn'>Task Manager</button></Link></div>
+                <div className='title'>Admin Dashboard<Link to="/register"><button className='btn'>New Registration</button></Link></div>
 
                 <div className='dashboard'>
                     <div className='left'>

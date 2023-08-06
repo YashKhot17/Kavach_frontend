@@ -4,9 +4,9 @@ import Navbar from '../components/Navbar'
 const Register = () => {
     return (
         <div>
-            <Navbar />
+        <Navbar />
             <div className='register-container'>
-                <div className='title'>Register New Car</div>
+                <div className='title'>Register New Vehicle</div>
                 <form className='regs'>
                     <label>Registration Number:</label>
                     <input type='text' id="registrationNo"/>

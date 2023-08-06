@@ -10,6 +10,9 @@ import Signup from './pages/Signup'
 import Dashboard from './pages/Dashboard';
 import Footer from './components/Footer';
 import Register from './pages/Register';
+import Search from './pages/Search';
+import Face from './pages/Face';
+import TakeAction from './pages/TakeAction';
 
 function App() {
   return (
@@ -29,12 +32,16 @@ function App() {
               path="/signup" 
               element={!user ? <Signup /> : <Navigate to="/" />} 
             /> */}
-            <Route path="/" element = {<Landing />}/>
-            <Route path="login/" element = {<Login />}/>
-            <Route path="/signup" element = {<Signup />}/>
-            <Route path="/home" element = {<Home />}/>
-            <Route path="/dashboard" element = {<Dashboard />}/>
-            <Route path="/register" element = {<Register />}/>
+            <Route path="/" element={<Landing />} />
+            <Route path="login/" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/search" element={<Search />} />
+            <Route path="/face" element={<Face />} />
+            <Route path="/action" element={<TakeAction />} />
+            <Route path="*" element={<Landing />} />
           </Routes>
         </div>
       </BrowserRouter>
