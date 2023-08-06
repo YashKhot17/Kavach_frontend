@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 
 import Navbar from '../components/Navbar'
 import heroImg from '../utils/hero.png';
-import Footer from '../components/Footer'
 
 
 const Landing = () => {
@@ -42,7 +41,6 @@ const Landing = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   )
 }

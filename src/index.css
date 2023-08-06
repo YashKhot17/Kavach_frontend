@@ -7,6 +7,7 @@
   --blue: #42ACB3;
   --white: #FAFAFA;
   --black: #404040;
+  --grey: rgb(237, 237, 237);
 }
 
 body{
@@ -274,6 +275,9 @@ footer{
   margin: 10px 50px
 }
 .admin-container .title{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 7% 0 40%;
   font-size: xx-large;
   font-weight: bold;
   text-align: center;
@@ -292,4 +296,59 @@ footer{
   text-align: center;
   align-items: center;
   margin: 10px;
+}
+.admin-container .title button{
+  background: var(--green);
+  border: 0;
+  color: #fff;
+  padding: 10px 40px;
+  font-family: "Poppins";
+  border-radius: 30px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+}
+
+/* Registration Page */
+.register-container .regs{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  justify-content: center;
+  margin: 0px 250px
+}
+.register-container .title{
+  display: flex;
+  font-size: xx-large;
+  font-weight: bold;
+  justify-content: center;
+  padding: 20px;
+}
+.register-container .regs{
+  background-color: var(--grey);
+  padding: 40px;
+  border-radius: 20px;
+}
+.register-container .regs label{
+  text-align: end;
+  align-items: center;
+  justify-content: center;
+}
+.register-container .regs input{
+  margin: 0;
+}
+.register-container .title input{
+  width: 20%;
+  display: flex;
+  background: var(--green);
+  border: 0;
+  color: #fff;
+  padding: 10px 40px;
+  font-family: "Poppins";
+  border-radius: 30px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
 }

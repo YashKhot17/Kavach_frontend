@@ -8,6 +8,8 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
 import Dashboard from './pages/Dashboard';
+import Footer from './components/Footer';
+import Register from './pages/Register';
 
 function App() {
   return (
@@ -32,9 +34,11 @@ function App() {
             <Route path="/signup" element = {<Signup />}/>
             <Route path="/home" element = {<Home />}/>
             <Route path="/dashboard" element = {<Dashboard />}/>
+            <Route path="/register" element = {<Register />}/>
           </Routes>
         </div>
       </BrowserRouter>
+      <Footer />
     </div>
   );
 }
